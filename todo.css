@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 360px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+input:focus {
+    border-color: #667eea;
+}
+button {
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+}
+/* Add Button */
+.input-section button {
+    background: #667eea;
+    color: white;
+    transition: 0.2s;
+}
+.input-section button:hover {
+    background: #5a67d8;
+}
+/* Task item */
+li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+li:hover {
+    background: #f1f1f1;
+}
+/* Completed */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+/* Buttons inside task */
+.task-buttons button {
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    transition: 0.2s;
+}
+/* Edit */
+.edit {
+    background: #3182ce;
+    color: white;
+}
+.edit:hover {
+    background: #2b6cb0;
+}
+/* Delete */
+.delete {
+    background: #e53e3e;
+    color: white;
+}
+.delete:hover {
+    background: #c53030;
+}
